@@ -11,6 +11,10 @@ def test_naive_buffer():
     buffer = BetterIterator(["ab", "c"])
     assert gather(buffer) == "abc"
 
+def test_naive_buffer_empty_strings():
+    buffer = BetterIterator(["a", " "])
+    assert gather(buffer) == "a"
+
 # [example]
 def test_naive_buffer_nested_loop():
     buffer = BetterIterator(["a", "b"])

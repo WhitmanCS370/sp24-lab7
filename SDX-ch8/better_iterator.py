@@ -14,6 +14,7 @@ class BetterCursor:
         self._row = 0
         self._col = -1
 
+#["a"," "]
     def __next__(self):
         self._advance()
         if self._row == len(self._text):
@@ -24,7 +25,7 @@ class BetterCursor:
     def _advance(self):
         if self._row < len(self._text):
             self._col += 1
-            if self._col == len(self._text[self._row]):
+            if self._col == len(self._text[self._row]) or self._text[self._row]=="":
                 self._row += 1
                 self._col = 0
     # [/advance]
