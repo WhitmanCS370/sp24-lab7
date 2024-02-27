@@ -7,7 +7,8 @@ Organization:
 * SDX-ch9: The code files for the _SDX Ch. 8_ activity (as downloaded directly from the book website, unmodified) 
 
 ## Team Members for Part 1
-Enter your names here
+Luke Samuels
+Andrew Tate
 
 ## Team Roles for Part 1
 Who will start out as
