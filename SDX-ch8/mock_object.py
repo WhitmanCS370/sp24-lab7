@@ -46,7 +46,7 @@ def adder(a, b):
 
 def test_with_real_function():
     assert adder(2, 3) == 5
-# [/test_real]
+# [/]
 
 # [test_fixed]
 def test_with_fixed_return_value():
