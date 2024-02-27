@@ -11,8 +11,8 @@ Enter your names here
 
 ## Team Roles for Part 1
 Who will start out as
-* DRIVER: Driver's name
-* NAVIGATOR: Navigator's name
+* DRIVER: John Leeds
+* NAVIGATOR: Oliver Baltzer
 
 You will switch halfway through the _SDX Ch. 9_ activity.
 
@@ -20,17 +20,24 @@ You will switch halfway through the _SDX Ch. 9_ activity.
 
 Write your answers to the questions below.
 
-* What were the main ideas from SDX chapter 8?
+* What were the main ideas from SDX chapter 9?
 * What questions did you have about the material in the chapters? What did you find confusing?
+
+Main ideas:
+* Mock Objects: An object that replaces real functions with a simpler function, typically with a fixed return value
+* Protocols: A rule that tells Python what to do at specific moments.
+* Decorators: Wrap a function with another function
+* Iterators: An object with an __next__ method that stops with StopIteration
+
 
 Fill in the following table with your definitions and examples for the main concepts of this chapter --- mock objects, context managers, decorators, iterators.
 
 | Concept | Brief Definition | When to use (generally) | Potential uses in audio archive project |
 | --- | --- | --- | --- |
-| **mock objects** | Add your text here | Add your text here | Add your text here |
-| **context managers** | Add your text here | Add your text here | Add your text here |
-| **decorators** | Add your text here | Add your text here | Add your text here |
-| **iterators** | Add your text here | Add your text here | Add your text here |
+| **mock objects** | An object that replaces real functions with a simpler function, typically with a fixed return value | Testing | Testing |
+| **context managers** | A protocol that automatically calls __enter__ and __exit__ | If you have a series of actions that you know will proceed and / or follow another action | Opening sound files |
+| **decorators** | Wrap a function with another function | When there is a repeated pattern you want to apply to multiple functions | Logging |
+| **iterators** | An object with an __next__ method that stops with StopIteration |  When you have a class that contains items you want to iterate through | Making an AudioArchive class that contains a list of songs you want to iterate through |
 
 
 Write a short summary of what you did (which exercises) below.
