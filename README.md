@@ -38,3 +38,4 @@ Fill in the following table with your definitions and examples for the main conc
 
 
 Write a short summary of what you did (which exercises) below.
+- implemented the context manager
