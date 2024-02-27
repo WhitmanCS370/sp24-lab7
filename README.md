@@ -12,8 +12,8 @@ Andrew Tate
 
 ## Team Roles for Part 1
 Who will start out as
-* DRIVER: Driver's name
-* NAVIGATOR: Navigator's name
+* DRIVER: Andrew Tate
+* NAVIGATOR: Luke Samuels
 
 You will switch halfway through the _SDX Ch. 9_ activity.
 
