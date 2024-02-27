@@ -8,8 +8,8 @@ def gather(buffer):
     return result
 
 def test_naive_buffer():
-    buffer = BetterIterator(["ab", "c"])
-    assert gather(buffer) == "abc"
+    buffer = BetterIterator(["ab", ""])
+    assert gather(buffer) == "ab"
 
 # [example]
 def test_naive_buffer_nested_loop():
