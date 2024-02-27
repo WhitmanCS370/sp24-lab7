@@ -17,6 +17,9 @@ class ContextFake(Fake):
     def __exit__(self, exc_type, exc_value, exc_traceback):
         globals()[self.name] = self.original
 # [/contextfake]
+        
+
+
 
 # [test]
 def subber(a, b):
