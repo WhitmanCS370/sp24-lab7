@@ -25,7 +25,14 @@ Write your answers to the questions below.
 
 Fill in the following table with your definitions and examples for the main concepts of this chapter --- mock objects, context managers, decorators, iterators.
 
-| Concept         | Brief Definition     | When to use (generally) | Potential uses in audio archive project |
+| Concept | Brief Definition | When to use (generally) | Potential uses in audio archive project |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
+
+
+|          |      |  |  |
 |--------------|-----------|------------|
 | mock objects | --     | --        | --        |
 | context managers      | --  | --       | --        |
