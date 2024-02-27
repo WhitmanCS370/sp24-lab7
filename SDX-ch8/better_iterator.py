@@ -26,6 +26,8 @@ class BetterCursor:
             self._col += 1
             if self._col == len(self._text[self._row]):
                 self._row += 1
+                if self._row < len(self._text) and self._text[self._row] == "":
+                    self._row += 1
                 self._col = 0
     # [/advance]
 # [/cursor]

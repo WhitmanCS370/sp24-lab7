@@ -19,4 +19,13 @@ def test_naive_buffer_nested_loop():
         for inner in buffer:
             result += inner
     assert result == "abab"
+    
+def test_naive_empty():
+    buffer = BetterIterator(["a", ""])
+    assert gather(buffer) == "a"
 # [/example]
+
+if __name__ == "__main__":
+    test_naive_buffer()
+    test_naive_buffer_nested_loop()
+    test_naive_empty()
