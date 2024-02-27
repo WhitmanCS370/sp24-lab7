@@ -1,4 +1,7 @@
 # [buffer]
+from typing import Any
+
+
 class BetterIterator:
     def __init__(self, text):
         self._text = text[:]
@@ -29,3 +32,15 @@ class BetterCursor:
                 self._col = 0
     # [/advance]
 # [/cursor]
+
+class ContextManager(BetterIterator):
+    def __init__(self, func=None, value=None):
+        super().__init__(func, value)
+        self.original = None
+
+    def __enter__(self):
+        assert Exception is not None
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        globals()[self.name] = self.original
