@@ -46,3 +46,11 @@ Fill in the following table with your definitions and examples for the main conc
 
 Write a short summary of what you did (which exercises) below.
 
+- Timing blocks
+  - We made a class called Timer to log the time it takes to run a block of code
+- Handling empty strings
+  - We made the BetterIterator handle empty strings
+- Even better cursor
+  - Our previous one solved this in such a way
+- Logging to a file (?)
+  - We created a decorator that writes to a log file every time a function is run
