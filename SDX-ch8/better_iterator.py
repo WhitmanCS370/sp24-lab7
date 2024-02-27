@@ -18,6 +18,8 @@ class BetterCursor:
         self._advance()
         if self._row == len(self._text):
             raise StopIteration
+        if len(self._text[self._row][self._col]) == 0:
+            self._advance()
         return self._text[self._row][self._col]
 
     # [advance]

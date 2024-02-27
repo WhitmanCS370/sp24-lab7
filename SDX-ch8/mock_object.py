@@ -14,6 +14,24 @@ class Fake:
         return self.value
 # [/fake]
 
+# [timer]
+def Timer(func):
+    def _inner(*args):
+        with Timer() as start:
+            func(*args)
+        print(start.elapsed())
+    return _inner
+# [/timer]
+
+# [logger]
+def logger(func, filename):
+    def _inner(*args):
+        with open(filename, "a") as _filename:
+            _filename.write("appended text")
+        func(*args)
+    return _inner
+# [/logger]
+
 # [fakeit]
 def fakeit(name, func=None, value=None):
     assert name in globals()

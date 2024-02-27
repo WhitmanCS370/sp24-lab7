@@ -8,11 +8,16 @@ class ContextFake(Fake):
         self.name = name
         self.original = None
 
-    def __enter__(self):
-        assert self.name in globals()
-        self.original = globals()[self.name]
-        globals()[self.name] = self
-        return self
+    def __enter__(self, expected_error=None):
+        try:
+            assert self.name in globals()
+            self.original = globals()[self.name]
+            globals()[self.name] = self
+            return self
+        except expected_error:
+            pass
+        except Exception as e:
+            return e
 
     def __exit__(self, exc_type, exc_value, exc_traceback):
         globals()[self.name] = self.original
