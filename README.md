@@ -27,7 +27,10 @@ Fill in the following table with your definitions and examples for the main conc
 
 | Concept | Brief Definition | When to use (generally) | Potential uses in audio archive project |
 | --- | --- | --- | --- |
-| git status | List all new or modified files | List all new or modified files | List all new or modified files |
+| **mock objects** | Add your text here | Add your text here | Add your text here |
+| **context managers** | Add your text here | Add your text here | Add your text here |
+| **decorators** | Add your text here | Add your text here | Add your text here |
+| **iterators** | Add your text here | Add your text here | Add your text here |
 
 
 Write a short summary of what you did (which exercises) below.
